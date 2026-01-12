@@ -1,0 +1,131 @@
+/* CSS Global  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: rgb(226, 226, 226);
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 210px auto 50px;
+}
+
+/* Card base */
+.card {
+  border-top: 5px solid rgb(255, 47, 175);
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(219, 219, 219);
+  margin-bottom: 25px;
+  background-color: rgb(255, 255, 255);
+}
+/* Different module colors */
+.card.module-2 {
+  border-top: 5px solid rgb(31, 202, 16);
+}
+.card.module-3 {
+  border-top: 5px solid rgb(10, 172, 201);
+}
+.card.module-4 {
+  border-top: 5px solid rgb(255, 238, 0);
+}
+.card.module-5 {
+  border-top: 5px solid rgb(115, 0, 192);
+}
+.card.module-6 {
+  border-top: 5px solid rgb(255, 94, 0);
+}
+.card.module-7 {
+  border-top: 5px solid rgb(0, 255, 221);
+}
+.card.module-8 {
+  border-top: 5px solid rgb(255, 0, 0);
+}
+
+pre {
+}
+
+.note {
+}
+
+.note::before {
+}
+
+code {
+  background-color: rgb(224, 224, 224);
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+
+.badge {
+}
+
+/* Images (global safe defaults) */
+img {
+}
+
+/* CSS For Group 1: Header  */
+header {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  box-shadow: 5px 5px 6px rgb(121, 121, 121);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  /* fixed header */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+h1 {
+  color: rgb(255, 0, 157);
+}
+.list-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.list-menu li {
+  background-color: rgb(255, 0, 157);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.list-menu li a {
+  text-decoration: none;
+  color: rgb(224, 224, 224);
+}
+.list-menu li:hover {
+  background-color: rgb(255, 5, 242);
+}
+/* CSS For Group 2: Card 1: Basics  */
+
+/* CSS For Group 3: Card 2: Resize & aspect  */
+.positon {
+}
+.img_small {
+  width: 10%;
+}
+/* CSS For Group 4: Card 3: Object fit  */
+
+/* CSS For Group 5: Card 4: Image as Link  */
+
+/* CSS For Group 6: Card 5: Gallery  */
+
+/* CSS For Group 7: Card 6: Responsive  */
+
+/* CSS For Group 8: Card 7: Figure & Caption + Task  */
+
+/* CSS For Group 9: Card 8: Local file tips  */
+
+/* CSS For Group 10: Back to Tutorial */
