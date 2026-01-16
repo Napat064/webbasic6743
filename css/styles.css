@@ -111,11 +111,37 @@ h1 {
 /* CSS For Group 2: Card 1: Basics  */
 
 /* CSS For Group 3: Card 2: Resize & aspect  */
-.positon {
+pre{
+  border-left: 5px solid rgb(255, 0, 212);
+  background-color: rgb(221, 221, 221);
 }
-.img_small {
-  width: 10%;
+span{
+  background-color: rgb(235, 233, 233);
+  font-size: 12px;
+  margin: 15px;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
 }
+span a{
+  text-decoration: none;
+  color: #723fff;
+}
+.img_fixde{
+  width: 260px;
+  height: 160px;
+  object-fit: cover;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.note {
+border-left:5px solid #6e6e6e;
+padding-left: 10px;
+color: #6e6e6e;
+margin-top: 15px;
+}
+.note::before{content: "💡";}
 /* CSS For Group 4: Card 3: Object fit  */
 
 /* CSS For Group 5: Card 4: Image as Link  */
