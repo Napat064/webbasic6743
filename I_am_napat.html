@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Napat</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(255, 232, 251);
+            line-height: 1.6;
+            background-image: url("images/BG.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* ส่วนด้านบน */
+        header {
+            background: rgb(231, 231, 231);
+            height: 73px;
+            display: flex;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        header h1{
+            margin: auto 10px;
+        }
+        header img{
+            margin: 0 ;
+            width: 60px;
+            height: 73px;
+        }
+        .sign-up {
+            margin: auto 20px auto auto ;
+            width: 60px;
+            height: 30px;
+            border-radius: 12px;
+        }
+        .sign-up:hover {
+            background-color: #000;
+            color: #ffffff;
+            width: 65px;
+            height: 35px;
+        }
+        .log-in{
+            margin: auto 20px auto 0px ;
+            width: 60px;
+            height: 30px;
+            border-radius: 12px;
+            background-color: #000;
+            color: #ffffff;
+        }
+        .log-in:hover {
+            background-color: white;
+            color: black;
+            width: 65px;
+            height: 35px;
+        }
+
+        /* ส่วนเมนูบาร์ */
+        .menu{
+            background-color: #b9b9b9;
+            position: fixed;
+            top: 73px;
+            width: auto;
+            height: 100%;
+        }
+        .menu-con{
+            display: flex;
+            margin-top: 73px;
+        }
+        .con{
+            max-width: 90%;
+            margin: 10px auto;
+        }
+        .menu a{
+            color: #000;
+            text-decoration: none;
+            margin: 0 10px;
+            line-height: 3;
+            
+        }
+        .menu a:hover{
+            color: #ff00dd;
+            text-decoration: underline;
+        }
+        .menu li{
+            border: 2px solid rgb(133, 133, 133);
+            text-align: center;
+            margin-top: -2px;
+        }
+        .menu li:hover{
+            background-color: ;
+        }
+        /* ส่วนข้อมูล */
+        .card {
+            border-top: 5px solid rgb(255, 47, 175);
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgb(219, 219, 219);
+            margin-bottom: 25px;
+            background: linear-gradient(137deg, rgb(255, 255, 255), rgb(247, 26, 162));
+        }
+        h2{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        /* ข้อมูลส่วนตัว */
+        
+        .card-img-text{
+            display: flex;
+        }
+        .card-img-text pre{
+            font-size: 20px;
+            line-height: 2;
+        }
+        .card-img{
+            background-color: rgb(255, 193, 250);
+            width: auto;
+            height: auto;
+        }
+        .card-img img{
+            width: 100px;
+            height: 120px;
+            margin:  10px;
+        }
+        .card-img h1{
+            margin: 0 auto;
+            font-size: 90px;
+            color: #ff9cea;
+            text-align: center;
+            line-height: 1;
+        }
+        .card-text{
+            background: linear-gradient(1000deg, rgb(248, 111, 207), rgb(250, 175, 221));
+            width: 80%;
+            height: auto;
+        }
+        .card-text li{
+            list-style: none;
+            line-height: 2.5;
+            font-size: 20px;
+            border: #fc5ce4 solid 2px;
+            border-collapse: collapse;
+            margin: -2px 0 -2px 0;
+        }
+        /* ข้อมูลเกรด */
+        .table-container {
+        width: 90%;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border: 1px solid #5e5e5e;
+        }
+
+        /* หัวข้อภาคการศึกษา */
+        .table-title {
+            background-color: #f33ac5;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding: 8px;
+            font-size: 18px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse; /* รวมเส้นขอบ */
+        }
+
+        thead {
+            background-color: #ffd9fc;
+        }
+
+        th, td {
+            border: 1px solid #a1a1a1;
+            padding: 6px;
+            font-size: 14px;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        /* ชื่อวิชาให้ชิดซ้าย */
+        td.subject {
+            text-align: left;
+        }
+        .GPA{
+            background-color: #e0e0e0;
+            margin: 0 27px 0  390px;
+            border: 1px solid rgb(121, 121, 121);
+        }
+        .GPA h3 {
+            text-align: right;
+        }
+        .GPA span{
+            margin: 0 10px 0 20px;
+        }
+        /* ข้อมูลติดต่อ */
+        .Contact li img{
+            width: 40px;
+            height: 40px;
+        }
+        .Contact li{
+            list-style: none;
+            font-size: 30px;
+            
+        }
+        .Contact li span{
+            font-size: 50px;
+        }
+        /* ส่วนฟุตเตอร์ */
+        footer{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img src="images/NPRU.png" alt="NPRULOGO">
+        <h1>มหาวิทยาลัยราชภัฏนครปฐม</h1>
+        <button class="sign-up">sign up</button>
+        <button class="log-in">log in</button>
+    </header>
+
+    <div class="menu-con">
+        <div class="menu">
+            <ul>
+                <li><a href="#1">ข้อมูลนักศึกษา</a></li>
+                <li><a href="#2">ผลการเรียน</a></li>
+                <li><a href="#3">ข้อมูลติดต่อ</a></li>
+                <li><a href="index.html">กลับหน้าหลัก</a></li>
+            </ul>
+        </div>
+        <div class="con">
+            <!-- ข้อมูลนักศึกษา -->
+            <div id="1" class="card">
+                <h2>ข้อมูลนักศึกษา</h2>
+                <div class="card-img-text">
+                    <div class="card-img">
+                        <img src="images/Napat.jpg" alt="Studen">
+                        <h1>N</h1>
+                        <h1>P</h1>
+                        <h1>R</h1>
+                        <h1>U</h1>
+                    </div>
+                    <div class="card-text">
+                        <ul>
+                            <li><b>รหัสนักศึกษา</b> : 674230038</li>
+                            <li><b>ชื่อ-นามสกุล</b> : นายณพัชร พิมประสาร</li>
+                            <li><b>ชื่ออังกฤษ</b> :	Mr. NAPAT PIMPARSAN </li>
+                            <li><b>คณะ</b> : วิทยาศาสตร์และเทคโนโลยี</li>
+                            <li><b>สาขาวิชา</b> : เทคโนโลยีสารสนเทศ</li>
+                            <li><b>หมู่เรียน</b> : 67/43</li>
+                            <li><b>เกิดวันที่</b> : 6 กรกฎาคม พ.ศ. 2547</li>
+                            <li><b>กลุ่มเลือด</b> : O</li>
+                            <li><b>สัญชาติ</b> : ไทย</li>
+                            <li><b>ศาสนา</b> : พุทธ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ผลการเรียน -->
+            <div id="2" class="card">
+                <h2>ผลการเรียน</h2>
+                <!-- 1/1 -->
+                <div class="table-container">
+                    <div class="table-title">
+                        <h3>ภาคการศึกษาที่ 1/2567</h3>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>รหัสวิชา</th>
+                                <th>ชื่อวิชา</th>
+                                <th>หน่วยกิต</th>
+                                <th>เกรด</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1500001</td>
+                                <td class="subject">ภาษาอังกฤษเพื่อการสื่อสารในสังคม 1</td>
+                                <td>0</td>
+                                <td>P</td>
+                            </tr>
+
+                            <tr>
+                                <td>1500204</td>
+                                <td class="subject">การสื่อสารอย่างผู้นำ</td>
+                                <td>3</td>
+                                <td>B</td>
+                            </tr>
+
+                            <tr>
+                                <td>2500201</td>
+                                <td class="subject">จิตวิญญาณราชภัฏนครปฐม</td>
+                                <td>3</td>
+                                <td>B+</td>
+                            </tr>
+
+                            <tr>
+                                <td>7201101</td>
+                                <td class="subject">คณิตศาสตร์และสถิติสำหรับเทคโนโลยีสารสนเทศ</td>
+                                <td>3</td>
+                                <td>A</td>
+                            </tr>
+
+                            <tr>
+                                <td>7201102</td>
+                                <td class="subject">ระบบคอมพิวเตอร์</td>
+                                <td>3</td>
+                                <td>B+</td>
+                            </tr>
+
+                            <tr>
+                                <td>7201103</td>
+                                <td class="subject">หลักการเขียนโปรแกรมคอมพิวเตอร์</td>
+                                <td>3</td>
+                                <td>A</td>
+                            </tr>
+
+                            <tr>
+                                <td>7201401</td>
+                                <td class="subject">โปรแกรมสำเร็จรูปมัลติมีเดีย</td>
+                                <td>3</td>
+                                <td>A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 1/2 -->
+                <div class="table-container">
+                    <div class="table-title">
+                        <h3>ภาคการศึกษาที่ 2/2567</h3>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>รหัสวิชา</th>
+                                <th>ชื่อวิชา</th>
+                                <th>หน่วยกิต</th>
+                                <th>เกรด</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1500002</td>
+                                <td class="subject">ภาษาอังกฤษเพื่อการสื่อสารในสังคม 2</td>
+                                <td>0</td>
+                                <td>P</td>
+                            </tr>
+
+                            <tr>
+                                <td>2000201</td>
+                                <td class="subject">ปรัชญาของเศรษฐกิจพอเพียง</td>
+                                <td>3</td>
+                                <td>A</td>
+                            </tr>
+
+                            <tr>
+                                <td>2000202</td>
+                                <td class="subject">สีสันแห่งชีวิต</td>
+                                <td>3</td>
+                                <td>A</td>
+                            </tr>
+
+                            <tr>
+                                <td>4000201</td>
+                                <td class="subject">เทคโนโลยีดิจิทัลและนวัตกรรม</td>
+                                <td>3</td>
+                                <td>A</td>
+                            </tr>
+
+                            <tr>
+                                <td>7201301</td>
+                                <td class="subject">เครือข่ายคอมพิวเตอร์เบื้องต้น</td>
+                                <td>3</td>
+                                <td>B</td>
+                            </tr>
+
+                            <tr>
+                                <td>7201402</td>
+                                <td class="subject">การเขียนโปรแกรมแบบจินตภาพ</td>
+                                <td>3</td>
+                                <td>A</td>
+                            </tr>
+
+                            <tr>
+                                <td>7202105</td>
+                                <td class="subject">การประกันและความปลอดภัยด้านสารสนเทศ</td>
+                                <td>3</td>
+                                <td>C+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 2/1 -->
+                <div class="table-container">
+                    <div class="table-title">
+                        <h3>ภาคการศึกษาที่ 1/2568</h3>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>รหัสวิชา</th>
+                                <th>ชื่อวิชา</th>
+                                <th>หน่วยกิต</th>
+                                <th>เกรด</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1500201</td>
+                                <td class="subject">ภาษาอังกฤษเพื่อการสื่อสารข้ามวัฒนธรรม</td>
+                                <td>3</td>
+                                <td>B</td>
+                            </tr>
+
+                            <tr>
+                                <td>2000203</td>
+                                <td class="subject">การบริหารจัดการในศตวรรษที่ 21</td>
+                                <td>3</td>
+                                <td>A</td>
+                            </tr>
+
+                            <tr>
+                                <td>4000203</td>
+                                <td class="subject">ฟิต ฟอร์ เฟิร์ม</td>
+                                <td>3</td>
+                                <td>B</td>
+                            </tr>
+
+                            <tr>
+                                <td>7202302</td>
+                                <td class="subject">ระบบปฏิบัติการ</td>
+                                <td>3</td>
+                                <td>B+</td>
+                            </tr>
+
+                            <tr>
+                                <td>7202303</td>
+                                <td class="subject">โครงสร้างข้อมูลและระบบฐานข้อมูล</td>
+                                <td>3</td>
+                                <td>B</td>
+                            </tr>
+
+                            <tr>
+                                <td>7203803</td>
+                                <td class="subject">การพาณิชย์อิเล็กทรอนิกส์</td>
+                                <td>3</td>
+                                <td>B+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="GPA">
+                    <h3>เกรดเฉลี่ยสะสม GPA : <span>3.52</span></h3>
+                </div>
+            </div>
+
+            <!-- ข้อมูลติดต่อ -->
+            <div id="3" class="card">
+                <h2>ข้อมูลติดต่อ</h2>
+                <ul class="Contact">
+                    <li><img src="images/icons8-phone-number-100.png" alt="phone-number"> <span>:</span> 064-435-6334</li>
+                    <li><img src="images/icons8-@-100.png" alt="@"> <span>:</span> 674230038@webmail.npru.ac.th</li>
+                    <li><img src="images/icons8-facebook-100.png" alt="facebook"> <span>:</span> Napat Pimprasan</li>
+                    <li><img src="images/icons8-line-100.png" alt="line"> <span>:</span> napat11111</li>
+                    <li><img src="images/icons8-home-100.png" alt="home"> <span>:</span> บ้านเลขที่ 59 หมู่ 9 ต.ห้วยแห้ง อ.บ้านไร่ จ.อุทัยธานี</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Copyright by Napat</p>
+        <p>Information Technology.NPRU</p>
+    </footer>
+    
+</body>
+</html>
