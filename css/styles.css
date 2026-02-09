@@ -219,7 +219,6 @@ h1 {
 .yt_img {
   width: 40%;
   height: auto;
-  margin-top: 30px;
 }
 
 /* CSS For Group 6: Card 5: Gallery  */
@@ -248,7 +247,7 @@ figure {
 }
 /* CSS For Group 9: Card 8: Local file tips  */
 .bg-img {
-  background-image: url("../images/3.png");
+  background-image: url("../images/1.jpg");
 }
 /* CSS For Group 10: Back to Tutorial */
 .Back-link {
