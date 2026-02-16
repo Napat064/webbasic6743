@@ -163,3 +163,127 @@ a:hover {
 .hero-item .read-more:hover::after {
   margin-left: 10px;
 }
+/*===============================================*/
+/*Page Section*/
+/*===============================================*/
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 0.9fr;
+  gap: 20px;
+}
+/*===============================================*/
+/*Left side*/
+/*===============================================*/
+.card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 18px;
+}
+.card + .card {
+  margin-top: 12px;
+}
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card-headline {
+  font-size: 0.687rem;
+  color: #777;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.date-circle {
+  background-color: rgb(0, 162, 255);
+  border-radius: 50%;
+  font-size: 0.69rem;
+  color: #ffffff;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.date-circle span.day {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.post-description {
+  font-size: 0.82rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+/* css for card1 img*/
+.post-image {
+  height: 200px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.post-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.post-footer {
+  font-size: 0.69rem;
+  color: #777;
+  border-top: 1px solid #777;
+  padding-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+/* css fo card2 table*/
+.comparison-table {
+  border-radius: 6px;
+  box-shadow: 0 2px 8px;
+}
+.comparison-table th {
+  background: linear-gradient(45deg, blue 0%, rgb(132, 0, 255) 100%);
+  color: #ffffff;
+  padding: 15px;
+}
+.comparison-table td {
+  background-color: #ffffff;
+  padding: 15px;
+}
+.comparison-table tr:nth-child(even) td {
+  background-color: #effbff;
+}
+.comparison-table tr:hover td {
+  background-color: #d5f5ff;
+}
+.feature {
+  font-weight: 600;
+  background-color: rgb(221, 233, 241);
+}
+.txt-red {
+  font-weight: 500;
+  color: red;
+}
+.txt-green {
+  font-weight: 500;
+  color: rgb(30, 255, 0);
+}
+.txt-gray {
+  font-weight: 500;
+  color: rgb(155, 155, 155);
+}
+/*===============================================*/
+/*Right side*/
+/*===============================================*/
+.widget {
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 18px;
+}
+.widget + .widget {
+  margin-top: 12px;
+}
