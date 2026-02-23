@@ -277,6 +277,103 @@ a:hover {
   color: rgb(155, 155, 155);
 }
 /*===============================================*/
+/*Form Style - Left side*/
+/*===============================================*/
+.form-group {
+  margin-bottom: 15px;
+}
+.form-label {
+  font-size: 0.82rem;
+  color: #555;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+}
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+.contact-form-main-card .form-input,
+.contact-form-main-card .form-select,
+.contact-form-main-card .form-textarea {
+  border: 1px solid #adadad;
+  background-color: rgb(241, 241, 241);
+  color: #333;
+}
+.contact-form-main-card .form-input:focus,
+.contact-form-main-card .form-select:focus,
+.contact-form-main-card .form-textarea:focus {
+  outline: none;
+  background: #fff;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.18);
+  transform: translateY(-1px);
+}
+.contact-form-main-card {
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+  border-radius: 15px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgb(190, 190, 190);
+  border: 1px solid rgb(218, 218, 218);
+}
+.contact-title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 2px 4px rgb(73, 73, 73);
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.form-select {
+  color: #333;
+}
+.form-checkbox-group {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+.checkbox-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.checkbox-item input[type="checkbox"] {
+  transform: scale(1.15);
+  accent-color: red;
+}
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.form-button {
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(45deg, rgb(0, 255, 0) 0%, rgb(1, 136, 1) 100%);
+}
+.form-button.module {
+  background: linear-gradient(45deg, rgb(255, 0, 0) 0%, rgb(126, 0, 0) 100%);
+}
+.contact-form-main-card .form-button:hover {
+  background: linear-gradient(45deg, #747474, #535353);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
+}
+/*===============================================*/
 /*Right side*/
 /*===============================================*/
 .widget {
