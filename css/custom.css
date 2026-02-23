@@ -384,3 +384,11 @@ a:hover {
 .widget + .widget {
   margin-top: 12px;
 }
+.contact-form-main-card.color-1{
+  background: linear-gradient(165deg, #369163, #b6ff85);
+  color: #ffffff;
+}
+.contact-form-main-card.color-2{
+  background: linear-gradient(165deg, #9c8bff, #4c4079);
+  color: #ffffff;
+}
