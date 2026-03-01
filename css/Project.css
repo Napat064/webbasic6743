@@ -253,42 +253,41 @@ footer{
 /*=============================================*/
 /* titel Producd */
 /*=============================================*/
-.c{
+.card-tt-pd{
     background-color: RGB(66, 59, 112);
     color: #ffffff;
     border-radius: 6px;
 }
-.i{
+.img-tt-pd{
     width: 340px;
     height: 441px;
     border-radius: 6px;
 }
-.f{
+.flex-tt-pd{
     display: flex;
     gap: 45px;
     padding: 73px 53px 20px 53px;
 }
-.p span{
+.price-tt-pd span{
     color: #009107;
     font-size: 3rem;
     font-weight: 900;
-    margin-right: 140px;
 }
-.p{
+.price-tt-pd{
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
-.n,.tt1,.tt2{
+.name-tt-pd,.title-products-1,.title-products-2{
     margin-bottom: 36px;
 }
-.n{
+.name-tt-pd{
     font-size: 2.5rem;
     font-weight: 900;
 }
-.tt1,.tt2{
+.title-products-1,.title-products-2{
     font-size: 1.5rem;
 }
-.b1,.b2{
+.basket,.buy{
     width: 206px;
     height: 60px;
     border-radius: 6px;
@@ -296,18 +295,18 @@ footer{
     font-size: 1.25rem;
     font-weight: 600;
 }
-.b2{
+.buy{
     background-color: brown;
     margin-left: 40px;
 }
-.ford a{
+.go-back a{
     color: #ffffff;
     margin-right: 12px;
 }
-.ford a:hover{
+.go-back a:hover{
     text-decoration: underline;
 }
-.ford span{
+.go-back span{
     margin-right: 12px;
     color: #ffffff;
 }
@@ -315,10 +314,11 @@ footer{
     width: 736px;
     margin: 0 auto;
 }
-.push-up-p{
+.push-up-pd{
     margin-top: 140px;
 }
-.b{
+.button{
     display: flex;
-    padding: 0  53px 20px 53px;
+    justify-content: space-between;
+    padding: 26px  53px 22px 53px;
 }
