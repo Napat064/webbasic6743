@@ -266,12 +266,13 @@ footer{
 .f{
     display: flex;
     gap: 45px;
-    padding: 73px 53px;
+    padding: 73px 53px 20px 53px;
 }
 .p span{
     color: #009107;
     font-size: 3rem;
     font-weight: 900;
+    margin-right: 140px;
 }
 .p{
     font-size: 2.5rem;
@@ -290,7 +291,6 @@ footer{
 .b1,.b2{
     width: 206px;
     height: 60px;
-    margin-left: 20px;
     border-radius: 6px;
     border: none;
     font-size: 1.25rem;
@@ -298,6 +298,7 @@ footer{
 }
 .b2{
     background-color: brown;
+    margin-left: 40px;
 }
 .ford a{
     color: #ffffff;
@@ -316,4 +317,8 @@ footer{
 }
 .push-up-p{
     margin-top: 140px;
+}
+.b{
+    display: flex;
+    padding: 0  53px 20px 53px;
 }
