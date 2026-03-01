@@ -245,8 +245,75 @@ footer{
     background-color: #000;
     color: #ffffff;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 .footer-pd{
     padding: 14px 0;
+}
+/*=============================================*/
+/* titel Producd */
+/*=============================================*/
+.c{
+    background-color: RGB(66, 59, 112);
+    color: #ffffff;
+    border-radius: 6px;
+}
+.i{
+    width: 340px;
+    height: 441px;
+    border-radius: 6px;
+}
+.f{
+    display: flex;
+    gap: 45px;
+    padding: 73px 53px;
+}
+.p span{
+    color: #009107;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.p{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.n,.tt1,.tt2{
+    margin-bottom: 36px;
+}
+.n{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.tt1,.tt2{
+    font-size: 1.5rem;
+}
+.b1,.b2{
+    width: 206px;
+    height: 60px;
+    margin-left: 20px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.b2{
+    background-color: brown;
+}
+.ford a{
+    color: #ffffff;
+    margin-right: 12px;
+}
+.ford a:hover{
+    text-decoration: underline;
+}
+.ford span{
+    margin-right: 12px;
+    color: #ffffff;
+}
+.container-nav-pd{
+    width: 736px;
+    margin: 0 auto;
+}
+.push-up-p{
+    margin-top: 140px;
 }
