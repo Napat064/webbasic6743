@@ -384,11 +384,106 @@ a:hover {
 .widget + .widget {
   margin-top: 12px;
 }
-.contact-form-main-card.color-1{
+/*===============================================*/
+/*ผู้เขียนแนะนำตัว Right side*/
+/*===============================================*/
+.widget-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.auther-photo {
+  background-color: rgb(181, 239, 247);
+  /*padding: 100px 0;*/
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+}
+.btn-facebook {
+  background-color: rgb(25, 0, 255);
+  color: #ffffff;
+  font-size: 0.8rem;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 6px;
+}
+.fb-like {
+  padding: 8px 0;
+  background-color: #dfdfdfa4;
+  text-align: center;
+  border-radius: 4px;
+}
+.advert {
+  height: 252px;
+  background-color: rgb(201, 200, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+/*===============================================*/
+/*form Right side*/
+/*===============================================*/
+.contact-form-main-card.color-1 {
   background: linear-gradient(165deg, #369163, #b6ff85);
   color: #ffffff;
 }
-.contact-form-main-card.color-2{
+.contact-form-main-card.color-2 {
   background: linear-gradient(165deg, #9c8bff, #4c4079);
   color: #ffffff;
+}
+/*===============================================*/
+/*footer*/
+/*===============================================*/
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+  margin-top: 30px;
+}
+.footer a {
+  color: #0fd4e2;
+}
+/*===============================================*/
+/*gold-table*/
+/*===============================================*/
+:root {
+  --line: rgb(255, 136, 0);
+  --bg01: rgb(255, 203, 89);
+  --bg02: rgb(245, 229, 142);
+  --bg03: rgb(248, 243, 175);
+  --up: rgb(57, 201, 0);
+  --low: red;
+}
+.gold-table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+.gold-table th,
+.gold-table td {
+  border: solid 1px var(--line);
+  padding: 10px 2px;
+}
+.warpp-gold-table {
+  background-color: var(--bg03);
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  border: solid 2px var(--line);
+}
+.gold-table thead th {
+  background-color: var(--bg01);
+}
+.gold-table tbody th {
+  background-color: var(--bg01);
+}
+.gold-table .total th,
+.gold-table .total td {
+  background-color: var(--bg02);
+  font-weight: 700;
 }
