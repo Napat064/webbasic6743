@@ -462,12 +462,18 @@ a:hover {
 .gold-table {
   border-collapse: collapse;
   width: 100%;
-  text-align: center;
+  
 }
 .gold-table th,
 .gold-table td {
   border: solid 1px var(--line);
   padding: 10px 2px;
+}
+.gold-table th{
+  text-align: center;
+}
+.gold-table td{
+  text-align: right;
 }
 .warpp-gold-table {
   background-color: var(--bg03);
@@ -486,4 +492,23 @@ a:hover {
 .gold-table .total td {
   background-color: var(--bg02);
   font-weight: 700;
+}
+.gold-table td.up-dow{
+  text-align: center;
+}
+.gold-table td.up-dow.dow{
+  color: #ff0000;
+}
+.gold-table td.up-dow.dow::before {
+  content: "▼";
+  margin-left: 5px;
+  color: #ff0000;
+}
+.gold-table td.up-dow.up{
+  color: #16bb00;
+}
+.gold-table td.up-dow.up::before {
+  content: "▲";
+  margin-left: 5px;
+  color: #16bb00;
 }
