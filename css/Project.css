@@ -92,6 +92,7 @@ a{
     color: rgb(255, 255, 255);
 }
 
+
 /*=============================================*/
 /* header */
 /*=============================================*/
@@ -168,7 +169,7 @@ a{
     width: 224px;
     height: 100%;
     background-color: RGB(255, 211, 226);
-    box-shadow: 0 2px 8px;
+    box-shadow: 0 0 8px 3px rgba(52, 0, 121, 0.18);
     border-radius: 6px;
     transition: transform 0.3s ease;
     display: flex;
@@ -233,6 +234,9 @@ a{
     background-color: RGB(196, 182, 204);
     color: #000;
     text-decoration: none;
+}
+.nav-cg a{
+    color: #7031AB;
 }
 .h-cg{
     background-color: RGB(132, 130, 191);
