@@ -41,14 +41,19 @@
     <!--Navber-->
     <nav class="main-nav">
         <div class="wrapper">
-            <ul class="nav-menu">
-                <li><a href="" class="active">Home</a></li>
-                <li><a href="">AI Technology</a></li>
-                <li><a href="">Machine Learning</a></li>
-                <li><a href="">Deep Learning</a></li>
-                <li><a href="">AI Tools</a></li>
-                <li><a href="">AI News</a></li>
-            </ul>
+            <div id="hamburger-menu">
+                <span></span>
+            </div>
+            <div id="menu">
+                <ul class="nav-menu">
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">AI Technology</a></li>
+                    <li><a href="">Machine Learning</a></li>
+                    <li><a href="">Deep Learning</a></li>
+                    <li><a href="">AI Tools</a></li>
+                    <li><a href="">AI News</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -94,7 +99,7 @@
                 <!--lefe Side-->
                 <main class="post-list">
                     <!--Card 01-->
-                    <div class="card">
+                    <div class="card order-box-image">
                         <p class="card-headline">
                             CATEGORY ARCHIVES: <b>RESPONSIVE DESIGN</b>
                         </p>
@@ -129,7 +134,7 @@
                     </div>
 
                     <!--Card 02-->
-                    <div class="card">
+                    <div class="card order-box-table">
                 <p class="card-headline">
                     CATEGORY ARCHIVES: <b>CSS DISPLAY PROPERTY</b>
                 </p>
@@ -205,7 +210,7 @@
                     </div>
 
                     <!--Card 03-->
-                    <div class="card">
+                    <div class="card order-box-from">
                         <h2 class="contact-title">📞 ติดต่อเรา</h2>
                         <div class="contact-form-main-card">
                             <form action="" method="">
@@ -275,9 +280,9 @@
                 </main>
 
                 <!--Right Side-->
-                <aside>
+                <aside class="sidebar-widget">
                     <!--Widget 01-->
-                    <div class="widget">
+                    <div class="widget order-w-intro">
                         <div class="widget-title">สวัสดีครับ ยินดีต้อนรับ</div>
                         <p class="post-description">ผมชื่อ NAPAT เขียนบล็อกเกี่ยวกับ STARTUP การตลาด การเขียนโปรแกรม และเทคโนโลยี AI สำหรับ SME และ STARTUP</p>
                         <div class="auther-photo">รูปผู้เขียน</div>
@@ -285,7 +290,7 @@
                     </div>
 
                     <!--Widget 02-->
-                    <div class="widget">
+                    <div class="widget order-w-f-green">
                         <div class="contact-form-main-card color-1">
                             <h2>📧 รับข่าวสารใหม่</h2>
 
@@ -314,7 +319,7 @@
                     </div>
 
                     <!--Widget 03-->
-                    <div class="widget">
+                    <div class="widget order-w-f-purple">
                         <div class="contact-form-main-card color-2">
                             <h2>💬 ติดต่อด่วน</h2>
                             <div class="form-group">
@@ -345,7 +350,7 @@
                     </div>
 
                     <!--Widget 04-->
-                    <div class="widget">
+                    <div class="widget  order-w-fb">
                         <div class="widget-title">Napat</div>
                         <div class="fb-like">
                             กล่อง Facebook Like (ตัวอย่าง)
@@ -354,7 +359,7 @@
                     </div>
 
                     <!--Widget 05-->
-                    <div class="widget">
+                    <div class="widget  order-w-sponsor">
                         <div class="widget-title">Sponsor</div>
                         <div class="advert">พื้นที่โฆษณา / วิดีโอ</div>
                     </div>
@@ -401,43 +406,43 @@
                                     <td class="up-dow">-</td>
                                     <td>-</td>
                                     <td>-</td>
-                                    <td class="up-dow dow">-1,950</td>
+                                    <td class="up-dow dow"><span class="icon down"></span>-1,950</td>
                                     <td>49,100</td>
                                     <td>54,800</td>
                                 </tr>
                                 <tr>
                                     <th>มี.ค.</th>
-                                    <td class="up-dow dow">-1,700</td>
+                                    <td class="up-dow dow"><span class="icon down"></span>-1,700</td>
                                     <td>78,750</td>
                                     <td>79,050</td>
-                                    <td class="up-dow up">+3,750</td>
+                                    <td class="up-dow up"><span class="icon up"></span>+3,750</td>
                                     <td>46,350</td>
                                     <td>50,100</td>
                                 </tr>
                                 <tr>
                                     <th>ก.พ.</th>
-                                    <td class="up-dow up">+3,400</td>
+                                    <td class="up-dow up"><span class="icon up"></span>+3,400</td>
                                     <td>68,200</td>
                                     <td>77,600</td>
-                                    <td class="up-dow dow">-1,850</td>
+                                    <td class="up-dow dow"><span class="icon down"></span>-1,850</td>
                                     <td>44,600</td>
                                     <td>47,450</td>
                                 </tr>
                                 <tr>
                                     <th>ม.ค.</th>
-                                    <td class="up-dow up">+9,250</td>
+                                    <td class="up-dow up"><span class="icon up"></span>+9,250</td>
                                     <td>64,550</td>
                                     <td>81,950</td>
-                                    <td class="up-dow up">+2,050</td>
+                                    <td class="up-dow up"><span class="icon up"></span>+2,050</td>
                                     <td>42,550</td>
                                     <td>44,850</td>
                                 </tr>
                                 <tr class="total">
                                     <th>ทั้งปี</th>
-                                    <td class="up-dow up">+14,350</td>
+                                    <td class="up-dow up"><span class="icon up"></span>+14,350</td>
                                     <td>64,550</td>
                                     <td>81,950</td>
-                                    <td class="up-dow up">+22,550</td>
+                                    <td class="up-dow up"><span class="icon up"></span>+22,550</td>
                                     <td>42,550</td>
                                     <td>67,400</td>
                                 </tr>
@@ -464,6 +469,26 @@
         <p>© 2025 Suksawat — All rights reserved.</p>
         <p>Designed for educational/demo purposes • <a href="">Contact</a></p>
     </footer>
+
+    <script>
+        var burgerMenu = document.getElementById('hamburger-menu');
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+
+        // ปิดเมนูเมื่อกดลิงก์
+        var menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                burgerMenu.classList.remove("close");
+                overlay.classList.remove("overlay");
+            });
+        });
+    </script>
 
 </body>
 
