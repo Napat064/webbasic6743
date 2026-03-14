@@ -343,6 +343,8 @@ a:hover {
 }
 .checkbox-item {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
 }
 .checkbox-item input[type="checkbox"] {
@@ -455,21 +457,22 @@ a:hover {
   --bg02: rgb(245, 229, 142);
   --bg03: rgb(248, 243, 175);
   --up: rgb(57, 201, 0);
-  --dow: red;
+  --low: red;
 }
 .gold-table {
   border-collapse: collapse;
   width: 100%;
+  
 }
 .gold-table th,
 .gold-table td {
   border: solid 1px var(--line);
   padding: 10px 2px;
 }
-.gold-table th {
+.gold-table th{
   text-align: center;
 }
-.gold-table td {
+.gold-table td{
   text-align: right;
 }
 .warpp-gold-table {
@@ -478,7 +481,6 @@ a:hover {
   border-radius: 16px;
   overflow: hidden;
   border: solid 2px var(--line);
-  margin-bottom: 20px;
 }
 .gold-table thead th {
   background-color: var(--bg01);
@@ -491,153 +493,22 @@ a:hover {
   background-color: var(--bg02);
   font-weight: 700;
 }
-.gold-table td.up-dow {
+.gold-table td.up-dow{
   text-align: center;
 }
-.gold-table td.up-dow.dow {
-  color: var(--dow);
+.gold-table td.up-dow.dow{
+  color: #ff0000;
 }
 .gold-table td.up-dow.dow::before {
   content: "▼";
-  margin-right: 5px;
-  color: var(--dow);
+  margin-left: 5px;
+  color: #ff0000;
 }
-.gold-table td.up-dow.up {
-  color: var(--up);
+.gold-table td.up-dow.up{
+  color: #16bb00;
 }
 .gold-table td.up-dow.up::before {
   content: "▲";
-  margin-right: 5px;
-  color: var(--up);
-}
-.icon {
-  display: inline-block;
-  width: 0px;
-  height: 0px;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-}
-.up {
-  border-bottom: 10px solid var(--up);
-}
-.down {
-  border-top: 10px solid var(--dow);
-}
-#hamhamburger-menu {
-  display: none;
-}
-/*===============================================*/
-/*Responsive*/
-/*===============================================*/
-
-/*สำหรับหน้าจอ 922px*/
-@media (max-width: 922px) {
-  .site-header {
-    background-color: rgb(244, 255, 93);
-  }
-  .content-grid {
-    grid-template-columns: 1fr;
-  }
-}
-/*สำหรับหน้าจอ 768px*/
-@media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-  .site-header {
-    background-color: rgb(255, 153, 0);
-  }
-  .hero-grid {
-    grid-template-columns: 1fr;
-  }
-  .nav-menu {
-    flex-direction: column;
-    padding-top: 20px;
-  }
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-  .form-checkbox-group {
-    flex-direction: column;
-  }
-}
-/*สำหรับหน้าจอ 576px*/
-@media (max-width: 576px) {
-  .site-header {
-    background-color: rgb(255, 0, 0);
-  }
-  #hamburger-menu {
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    z-index: 1000;
-  }
-  #hamburger-menu span,
-  #hamburger-menu span::before,
-  #hamburger-menu span::after {
-    background-color: white;
-    height: 3px;
-    width: 100%;
-    display: block;
-    position: absolute;
-    content: "";
-    transition: all 0.5s ease;
-  }
-  #hamburger-menu span {
-    top: 13px;
-  }
-  #hamburger-menu span::before {
-    top: -8px;
-  }
-  #hamburger-menu span::after {
-    top: 8px;
-  }
-  #menu {
-    display: none;
-  }
-
-  #hamburger-menu.close span {
-    background-color: transparent;
-  }
-  #hamburger-menu.close span::before {
-    transform: rotate(45deg);
-    top: 0;
-  }
-  #hamburger-menu.close span::after {
-    transform: rotate(-45deg);
-    top: 0;
-  }
-  #menu.overlay {
-    display: block;
-  }
-  .order-box-image {
-    order: 3;
-  }
-  .order-box-table {
-    order: 1;
-  }
-  .order-box-from {
-    order: 2;
-  }
-
-  .sidebar-widget {
-    display: flex;
-    flex-direction: column;
-  }
-  .order-w-intro {
-    order: -5;
-  }
-  .order-w-f-green {
-    order: -1;
-  }
-  .order-w-f-purple {
-    order: -2;
-  }
-  .order-w-fb {
-    order: -4;
-  }
-  .order-w-sponsor {
-    order: -3;
-  }
+  margin-left: 5px;
+  color: #16bb00;
 }
