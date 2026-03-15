@@ -23,8 +23,12 @@ a{
     padding: 0 20px;
 }
 
-.header-flex .login:hover,.shopnow:hover{
-    background-color: RGB(213, 92, 101);
+.header-flex .login:hover{
+    background-color: #5158C9;
+    transition: background-color 0.5s ease;
+}
+.shopnow:hover{
+    background-color: rgb(250, 108, 120);
     transition: background-color 0.5s ease;
 }
 
@@ -170,18 +174,18 @@ a{
 .card{
     width: 224px;
     height: 100%;
-    background-color: RGB(255, 211, 226);
-    box-shadow: 0 0 8px 3px rgba(52, 0, 121, 0.18);
+    background-color: #FFD3E2;
+    box-shadow: rgb(0, 0, 0 ,0.15) 4px 4px 12px;
     border-radius: 6px;
-    transition: transform 0.3s ease;
+    transition: all 0.5s ease;
     display: flex;
     flex-direction: column;
 }
 
 .card:hover{
     transform: scale(1.05);
-    background-color: RGB(255, 193, 214);
-    box-shadow: #ffffff 0 2px 8px;
+    background-color: #FFC1D6; 
+    box-shadow: rgb(0, 0, 0 ,0.15) 4px 4px 12px;
 }
 
 .Img-Products{
@@ -257,6 +261,10 @@ footer{
 .footer-pd{
     padding: 14px 0;
 }
+.members{
+    color: hsl(0, 0%, 100%);
+    text-decoration: underline;
+}
 /*=============================================*/
 /* titel Producd */
 /*=============================================*/
@@ -301,10 +309,17 @@ footer{
     border: none;
     font-size: 1.25rem;
     font-weight: 600;
+    border: 1px solid;
 }
 .buy{
-    background-color: brown;
+    background-color: #FF7BA4;
     margin-left: 40px;
+}
+.buy:hover{
+    background-color: #CC1951;
+}
+.basket:hover{
+    background-color: #D1D1D1;
 }
 .go-back a{
     color: #ffffff;
@@ -328,4 +343,218 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 26px  53px 22px 53px;
+}
+
+/*=============================================*/
+/* Logib and Register */
+/*=============================================*/
+
+/* หน้า Login */
+.circle-bg {
+    width: 350px;    
+    height: 350px;         
+    background-color: #3b3b6d; 
+    border-radius: 50%;    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.circle-bg img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+}
+.auth-container {
+    display: flex; 
+    width: 1000px;
+    max-width: 100%;
+    background-color: #ffdce5;
+    align-items: center; 
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.auth-graphic, .auth-form-wrapper {
+    flex: 1px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.circle-bg {
+    width: 400px;
+    height: 400px;
+    background-color: #3b3b6d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-bg img {
+    width: 60%;
+    object-fit: contain;
+}
+
+.auth-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.auth-header h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.auth-header p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.small-icon {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    background-color: #e4e4e4;
+    box-shadow: 0 0 0 2px #5158C9;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 15px;
+    background-color: #8289FF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #5c68ff;
+}
+
+.auth-footer {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+.auth-footer a {
+    color: #7983ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/*=============================================*/
+/* Contact */
+/*=============================================*/
+
+.main-content {
+    margin-top: 180px;
+}
+
+.card-maps-tt {
+    border-radius: 20px;
+    background-color: #423B70;
+    padding: 20px 0px;
+    box-shadow: 4px 8px 10px rgb(145, 145, 145);
+
+}
+
+.flex-card {
+    display: flex;
+    align-items: center;
+    line-height: 1.8;
+    justify-content: space-around;
+ 
+
+}
+.img-info img{
+    width: 314px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.info {
+     display: flex;
+     gap: 20px;
+}
+
+.info-content li{
+    list-style: none;
+}
+
+.info-content li p{
+    color: #ffffff;
+}
+
+.title-maps {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 30px 0;
+}
+
+.card-maps {
+    width: 100%;
+    height: 560px; 
+    background-color: #423B70;
+    border-radius: 24px;
+    box-shadow: 4px 8px 10px rgb(145, 145, 145);
+
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+}
+
+.img-maps {
+    max-width: 90%;
+    height: 500px;
+    border-radius: 12px;
 }
