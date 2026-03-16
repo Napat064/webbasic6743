@@ -296,7 +296,11 @@ section {
   border-radius: 10px;
   font-size: 1rem;
 }
-
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+  width: 100%;
+}
 .radio-group,
 .checkbox-group {
   display: flex;
@@ -430,6 +434,24 @@ footer {
     display: block;
     padding: 10px;
   }
+  .footer-container{
+    gap: 60px;
+  }
+  .footer-right{
+    flex-direction: column;
+  }
+  .footer-left,
+  .footer-right {
+    flex: 1;
+  }
+  .form-row{
+    display: flex;
+    flex-direction: column;
+  }
+  .checkbox-group,.radio-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 480px) {
@@ -443,5 +465,16 @@ footer {
   .footer-left,
   .footer-right {
     flex: 1;
+  }
+  .footer-container{
+    flex-direction: column;gap: 40px;
+  }
+  .form-row{
+    display: flex;
+    flex-direction: column;
+  }
+  .checkbox-group,.radio-group{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
