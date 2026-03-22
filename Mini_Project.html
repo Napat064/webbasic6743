@@ -5,17 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pony Shop</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="css/Project.css">
+
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .navbar {
+        margin: 0;
+        padding: 0;
+    }
+    </style>
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="container">
+        <div class="container-nav">
             <div class="header-flex">
                 <div class="webname-logo">
                     <img src="images/pony.png" alt="logo" class="logo">
@@ -28,10 +47,12 @@
                     <li><a href="Mimi_ContactUS.html">Contact us</a></li>
                 </ul>
 
-                <a href="Login.html"><button class="login">
-                        <img src="images/user.png" alt="login" class="imglongin"> Login</button></a>
-                <a href="register.html"><button class="login">
-                        <img src="images/user.png" alt="login" class="imglongin"> Register</button></a>
+                <div class="Login-row">
+                    <a href="Login.html"><button class="login c1">
+                            <img src="images/user.png" alt="login" class="imglongin"> Login</button></a>
+                    <a href="register.html"><button class="login">
+                            <img src="images/user.png" alt="login" class="imglongin"> Register</button></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -48,28 +69,100 @@
         <div class="card-grid">
             <a href="Mini_Menu_Dolls.html">
                 <div class="card">
-                    <img src="https://cs.lnwfile.com/_/cs/_raw/ct/ee/ag.jpg" alt="ตุ๊กตา" class="Img-Products">
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/rp/cq/en.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/ct/ee/ag.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/x0/8e/7z.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/2r/dg/wr.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/ql/a5/2s.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                        </div>
+                    </div>
                     <h3 class="name-products" style="font-size: 1.5rem;">ตุ๊กตา</h3>
                     <p class="see-more">See more</p>
                 </div>
             </a>
             <a href="Mini_Menu_categories.html">
                 <div class="card">
-                    <img src="https://cs.lnwfile.com/_/cs/_raw/c8/3v/ru.jpg" alt="ดินน้ำมัน" class="Img-Products">
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/1b/wj/22.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/39/81/gq.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/cn/wr/li.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/vy/oe/wf.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/id/s7/i0.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                        </div>
+                    </div>
                     <h3 class="name-products" style="font-size: 1.5rem;">สร้างสรรค์</h3>
                     <p class="see-more">See more</p>
                 </div>
             </a>
             <a href="Mini_Menu_Developmental.html">
                 <div class="card">
-                    <img src="https://cs.lnwfile.com/_/cs/_raw/39/81/gq.jpg" alt="ตัวต่อ" class="Img-Products">
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/yl/tq/yl.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/4e/cl/2c.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/il/8c/ib.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/96/t1/q6.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/hl/gf/m9.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                        </div>
+                    </div>
                     <h3 class="name-products" style="font-size: 1.5rem;">พัฒนาการ</h3>
                     <p class="see-more">See more</p>
                 </div>
             </a>
             <a href="Mini_Menu_Active.html">
                 <div class="card">
-                    <img src="https://cs.lnwfile.com/_/cs/_raw/ny/j9/vz.jpg" alt="สกู๊ตเตอร์" class="Img-Products">
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/ci/gg/6q.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/st/g0/1l.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/uh/2v/x2.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/xt/sq/ek.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://cs.lnwfile.com/_/cs/_raw/si/5d/ad.jpg" class="Img-Products mb-3" alt="...">
+                            </div>
+                        </div>
+                    </div>
                     <h3 class="name-products" style="font-size: 1.5rem;">สกู๊ตเตอร์</h3>
                     <p class="see-more">See more</p>
                 </div>
@@ -84,6 +177,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
