@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Test (674230038)</title>
+
+    <!-- ให้ นศ. เพิ่มลิงค์ Google Fonts เอง 1 font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ตรวจสอบส่วน head ให้ดีว่ามีอะไรขาดหายไปอีกบ้าง ถ้ามีก็ใส่ให้ครบ -->
+
+
+    <!-- เขียน style sheet เพิ่มเติมให้ใกล้เคียงกับตัวอย่าง -->
+    <style>
+        
+        /* ========== Reset เบื้องต้น ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Kanit", sans-serif;
+            line-height: 1.6;
+            background-color: #f5f7fb;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* ========== ใช้รวม ๆ ========== */
+        .container,.container-menu,.container-footer {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1f3c88;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        h3 {
+            color: #1f3c88;
+            margin-bottom: 10px;
+        }
+
+        /* ========== Header ========== */
+        header{
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 14px rgb(180, 180, 180);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .container-menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand{
+            color: #0063f8;
+        }
+
+        .nav-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+        }
+        .nav-list a {
+            color: #333;
+            font-weight: 500;
+            padding: 8px 12px;
+            transition: 0.3s;
+            border-radius: 4px;
+        }
+        .nav-list a:hover {
+            background-color: #b9d5ff;
+        }
+
+
+        /* ========== Hero ========== */
+        .hero {
+            padding: 70px 0;
+            background-color: #dceaff;
+        }
+
+        .btn-primary,.btn-secondary{
+            background-color: #0063f8;
+            color: #ffffff;
+            padding: 16px;
+            display: block;
+            border-radius: 6px;
+            max-width: 120px;
+            margin-top: 20px;
+        }
+        .btn-primary:hover{
+            background-color: #0054d3;
+        }
+
+        .btn-secondary{
+            background-color: #ff7b00;
+        }
+
+        .btn-secondary:hover{
+            background-color: #db6a00;
+        }
+
+        .hero-flex{
+            display: flex;
+            gap: 20px;
+        }
+
+        .left-side,.right-side{
+            flex: 1;
+        }
+
+        .img-hero{
+            border-radius: 6px;
+
+        }
+
+        .card-grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card{
+            box-shadow: 0 4px 14px rgb(180, 180, 180);
+            border-radius: 6px;
+            transition: transform 0.3s;
+            overflow: hidden;
+        }
+
+        .card:hover{
+            transform: translateY(-5px);
+        }
+        
+        .img-card{
+            width: 100%;
+            height: 150px;
+        }
+
+        .title{
+            padding: 12px;
+        }
+
+        footer{
+            background-color: #0063f8;
+            color: #ffffff;
+        }
+
+        .container-footer{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 20px;
+        }
+
+
+        /* =====เขียน style sheet เพิ่มเติม เพื่อให้รองรับการ responsive ด้านล่าง ========== */
+
+        /* ========== โดยทุกอย่างต้องแสดงเป็น 1 คอลัมน์ เหมือนตัวอย่าง ========== */
+
+        @media (max-width: 768px) {
+            .hero-flex{
+                flex-direction: column;
+            }
+
+            .card-grid{
+                grid-template-columns: 1fr;
+            }
+            
+            .container-footer{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .container-menu{
+                flex-direction: column;
+            }
+
+            .nav-list{
+                flex-direction: column;
+                gap: 20px;
+            }
+
+
+
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container-menu">
+            <h1 class="brand">เที่ยวเมืองน่าไป (อุทัยธานี)</h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#hero">หน้าแรก</a></li>
+                    <li><a href="#card">สถานที่ท่องเที่ยว</a></li>
+                    <li><a href="#footer">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-flex">
+                    <div class="left-side">
+                        <p style="margin-bottom: 12px;">จังหวัดท่องเที่ยวแนะนำ</p>
+                        <h2 style="color: #ac0d02;">ค้นพบเสน่ห์ของเมืองท่องเที่ยวที่คุณไม่ควรพลาด</h2>
+                        <p>สัมผัสธรรมชาติ วัฒนธรรม และอาหารท้องถิ่นที่น่าสนใจ
+                            พร้อมสถานที่ยอดนิยมที่เหมาะสำหรับการพักผ่อนในวันหยุด</p>
+                        <a href="#" class="btn-primary">ดูรายระเอียด</a>
+                    </div>
+
+                    <div class="right-side">
+                    <img src="https://cms.dmpcdn.com/travel/2020/09/02/a83f95b0-ecd5-11ea-aded-05c4dfa35678_original.JPG"
+                        alt="ภาพสถานที่ท่องเที่ยว" class="img-hero"/>
+                    </div>    
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Places Section - สถานที่ท่องเที่ยวแนะนำ -->
+        <section class="container">
+            <div style="text-align: center; margin-bottom: 24px;">
+                <h2>สถานที่ท่องเที่ยวแนะนำ</h2>
+                <p>ตัวอย่างสถานที่ท่องเที่ยวที่น่าสนใจในจังหวัด</p>
+            </div>
+
+            <div class="card-grid" id="card">
+                <article class="card">
+                    <img src="https://cms.dmpcdn.com/travel/2020/08/27/44dcf720-e824-11ea-8b4c-77a545c96ff7_original.jpg"
+                        alt="ต้นไม้ยักษ์" class="img-card"/>
+                    <div class="title">
+                        <h3>ต้นไม้ยักษ์</h3>
+                        <p>
+                            ต้นไม้ยักษ์นี้ เป็นไม้เนื้ออ่อน มีพูพอนไว้ค้ำลำต้น เส้นรอบวงแนบตามพูพอน จะได้ประมาณ 97 เมตรเลยทีเดียว แต่ถ้าวัดจากการใช้คนกางแขนโอบจะได้ราว 40 คน
+                        </p>
+                        <a href="#" class="btn-secondary">อ่านเพิ่มเติม</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://cms.dmpcdn.com/travel/2020/12/14/cca7d260-3e23-11eb-80e3-2fbf2839b261_original.jpg"
+                        alt="หุบป่าตาด" class="img-card"/>
+                    <div class="title">
+                        <h3>หุบป่าตาด</h3>
+                        <p>
+                            หลังจากผ่านอุโมงค์แล้วก็จะเข้าพื้นที่ของป่าตาด มีเนื้อที่ประมาณ 2 ไร่ เดินชมวิว ศึกษาธรรมชาติกันได้ชิลชิล และมีโถงถ้ำกลางหุบป่าตาดที่มีหินงอกหินย้อย
+                        </p>
+                        <a href="#" class="btn-secondary">อ่านเพิ่มเติม</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://cms.dmpcdn.com/travel/2023/08/30/fcb08920-46ef-11ee-9ea1-2167183ece43_webp_original.webp"
+                        alt="เขื่อนทับเสลา" class="img-card"/>
+                    <div class="title">
+                        <h3>เขื่อนทับเสลา</h3>
+                        <p>
+                            เขื่อนทับเสลา หรือที่เรียกกันว่า เขื่อนระบำ เป็นเขื่อนชลประทานขนาดใหญ่ กั้นลำห้วยทับเสลาเอาไว้ค่ะ ตั้งอยู่ที่ อำเภอลานสัก จังหวัดอุทัยธานี สร้างเสร็จเมื่อปี พ.ศ. 2531
+                        </p>
+                        <a href="#" class="btn-secondary">อ่านเพิ่มเติม</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container-footer">
+            <p>©2026 เที่ยวเมืองน่าไป ณพัชร พิมประสาร. All Rights Reserved.</p>
+            <div>
+                <span style="margin-right: 12px;">Email: 674230038@webmail.npru.ac.th</span>
+                <span>Facebook: เที่ยวเมืองน่าไป อุทัยธานี</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
