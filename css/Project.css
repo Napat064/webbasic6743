@@ -39,6 +39,12 @@ a{
 /*=============================================*/
 /* navbar */
 /*=============================================*/
+.container-nav{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 .navbar{
     background-color: RGB(66, 59, 112);
     position: fixed;
@@ -97,6 +103,9 @@ a{
     color: rgb(255, 255, 255);
 }
 
+.header-flex .login.c1{
+    margin-right: 20px;
+}
 
 /*=============================================*/
 /* header */
