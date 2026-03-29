@@ -88,7 +88,11 @@ a{
     padding: 46px 24px;
 }
 
-.menu li a:hover,
+.menu li a:hover{
+    background-color: #B3B9F0;
+    color: #8482BF;
+}
+
 .menu li a.active{
     background-color: RGB(115, 122, 186);
     color: #ffffff;
